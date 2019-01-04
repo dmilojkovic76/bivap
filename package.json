@@ -1,0 +1,14 @@
+{
+  "name": "bivap",
+  "version": "0.0.1",
+  "description": "Electron app za automatsko pustanje slika i videa iz foldera u full-screen",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Dusan Milojkovic",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.13"
+  }
+}
