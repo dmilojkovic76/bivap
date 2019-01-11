@@ -7,5 +7,12 @@
   </head>
   <body>
       BIVAP runnung!
+      <script>
+        const ipcRenderer = require('electron').ipcRenderer;
+
+        ipcRenderer.on('send-slike', (event, arg) => {
+          console.log(arg);
+        });
+      </script>
   </body>
 </html>
