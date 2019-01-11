@@ -70,7 +70,12 @@ function checkForFolderChanges(){
 }
 
 function sendImagesToRenderer(){
+  // Mozda bi trebalo da posaljem objekat koji sadrzi i sve slike i ostale opcije
   win.webContents.send('send-slike', `${mediji}`);
+}
+
+function showOptions(){
+  // TODO: Prikazi ekran za podesavanje opcije npr vremena trajanja i osvezavanja
 }
 
 // This method will be called when Electron has finished
@@ -89,7 +94,7 @@ app.on('ready', () => {
 
   globalShortcut.register('CommandOrControl+Shift+o', () => {
     // Show options.
-    showOptions;
+    showOptions();
   });
 });
 
